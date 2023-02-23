@@ -1,35 +1,38 @@
-Add Length Toy Problem Solution
+### Toys Problem Codility Test
 
-Problem
-What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
-Write a function that takes a String and returns an Array/list with the length of each word added to each element .
-Note: String will have at least one element; words will always be separated by a space.
+## Challenge 1: No ifs no buts(Toy Problem)
 
-BDD (Behavior Driven Development)
+# problem
+
+Here ,in this challenge , we are comparing numbers ,,the method is fed with two numbers ; num1 and num2, the method is capable of comparing two numbers and return "num1 is greater than num2 "if num1>num2,return "num1 is less than num2" if num1< num2 and finaly "num1 is equal to num2 if num1==num2  
+example1
+
+(5, 4) ---> "5 is greater than 4"
+
+(-4, -7) ---> "-4 is greater than -7"
+
+(2, 2) ---> "2 is equal to 2"
+
+# Challenge2: Ordered Count of Characters(Toy Problem)
+
+# problem
+
+in this challenge we Count the number of occurrences of each character and return it as a (list of arrays) in order of appearance. For empty output return (an empty list).
+
+.
+
+## BDD (Behavior Driven Development)
 
 Given: A string s
-When: The length of each word in string s is calculated
-Then: Return an array of (word + string length) for all words in string s
+When: Count the number of occurrences of each character
+Then: eturn it as a (list of arrays) in order of appearance. For empty output return (an empty list)
 
 Example1
-Given: "apple ban"
-Return: ["apple 5", "ban 3"]
+
+"abracadabra" ----> [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
+
 Example2
-Given: "you will win"
-Return: ["you 3", "will 4", "win 3"]
-
-PseudoCode:
-Convert the string into an array of the words inside. Given: "apple ban" => ["apple", "ban"]
-Loop the resulting array to get the length of each item "apple" => 5 "ban" => 3
-Add the length of each word to the word itself "apple 5", "ban 3"
-Push these new strings to the final array; result=["apple 5", "ban 3"]
-Return the final array ["apple 5", "ban 3"]
-
+233312", ------> [['2', 2], ['3', 3], ['1', 1]]
 
 Code
-The code is available in index.rb
-
-
-
-
-
+The code is available in challenge1.rb and challenge2.rb files for challenge 1 and challenge 2 respectifully
